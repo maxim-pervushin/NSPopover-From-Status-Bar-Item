@@ -13,6 +13,13 @@
 		C519A72F166636100027F3CB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C519A72D166636100027F3CB /* Credits.rtf */; };
 		C519A732166636100027F3CB /* MFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C519A731166636100027F3CB /* MFAppDelegate.m */; };
 		C519A735166636100027F3CB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C519A733166636100027F3CB /* MainMenu.xib */; };
+		C519A7411666369B0027F3CB /* MFStatusView.m in Sources */ = {isa = PBXBuildFile; fileRef = C519A7401666369B0027F3CB /* MFStatusView.m */; };
+		C519A747166636AD0027F3CB /* mf-image-black.png in Resources */ = {isa = PBXBuildFile; fileRef = C519A743166636AD0027F3CB /* mf-image-black.png */; };
+		C519A748166636AD0027F3CB /* mf-image-black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C519A744166636AD0027F3CB /* mf-image-black@2x.png */; };
+		C519A749166636AD0027F3CB /* mf-image-white.png in Resources */ = {isa = PBXBuildFile; fileRef = C519A745166636AD0027F3CB /* mf-image-white.png */; };
+		C519A74A166636AD0027F3CB /* mf-image-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C519A746166636AD0027F3CB /* mf-image-white@2x.png */; };
+		C519A753166638530027F3CB /* MFPopoverContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C519A751166638530027F3CB /* MFPopoverContentViewController.m */; };
+		C519A754166638530027F3CB /* MFPopoverContentViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C519A752166638530027F3CB /* MFPopoverContentViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,15 @@
 		C519A730166636100027F3CB /* MFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFAppDelegate.h; sourceTree = "<group>"; };
 		C519A731166636100027F3CB /* MFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFAppDelegate.m; sourceTree = "<group>"; };
 		C519A734166636100027F3CB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C519A73F1666369B0027F3CB /* MFStatusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFStatusView.h; sourceTree = "<group>"; };
+		C519A7401666369B0027F3CB /* MFStatusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFStatusView.m; sourceTree = "<group>"; };
+		C519A743166636AD0027F3CB /* mf-image-black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mf-image-black.png"; sourceTree = "<group>"; };
+		C519A744166636AD0027F3CB /* mf-image-black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mf-image-black@2x.png"; sourceTree = "<group>"; };
+		C519A745166636AD0027F3CB /* mf-image-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mf-image-white.png"; sourceTree = "<group>"; };
+		C519A746166636AD0027F3CB /* mf-image-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mf-image-white@2x.png"; sourceTree = "<group>"; };
+		C519A750166638530027F3CB /* MFPopoverContentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFPopoverContentViewController.h; sourceTree = "<group>"; };
+		C519A751166638530027F3CB /* MFPopoverContentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFPopoverContentViewController.m; sourceTree = "<group>"; };
+		C519A752166638530027F3CB /* MFPopoverContentViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MFPopoverContentViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +62,8 @@
 		C519A70F166636100027F3CB = {
 			isa = PBXGroup;
 			children = (
+				C519A74F1666382E0027F3CB /* View Controllers */,
+				C519A742166636A70027F3CB /* Images */,
 				C519A724166636100027F3CB /* StatusItemPopup */,
 				C519A71D166636100027F3CB /* Frameworks */,
 				C519A71B166636100027F3CB /* Products */,
@@ -82,6 +100,8 @@
 		C519A724166636100027F3CB /* StatusItemPopup */ = {
 			isa = PBXGroup;
 			children = (
+				C519A73F1666369B0027F3CB /* MFStatusView.h */,
+				C519A7401666369B0027F3CB /* MFStatusView.m */,
 				C519A730166636100027F3CB /* MFAppDelegate.h */,
 				C519A731166636100027F3CB /* MFAppDelegate.m */,
 				C519A733166636100027F3CB /* MainMenu.xib */,
@@ -100,6 +120,28 @@
 				C519A72D166636100027F3CB /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C519A742166636A70027F3CB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C519A743166636AD0027F3CB /* mf-image-black.png */,
+				C519A744166636AD0027F3CB /* mf-image-black@2x.png */,
+				C519A745166636AD0027F3CB /* mf-image-white.png */,
+				C519A746166636AD0027F3CB /* mf-image-white@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		C519A74F1666382E0027F3CB /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C519A750166638530027F3CB /* MFPopoverContentViewController.h */,
+				C519A751166638530027F3CB /* MFPopoverContentViewController.m */,
+				C519A752166638530027F3CB /* MFPopoverContentViewController.xib */,
+			);
+			name = "View Controllers";
+			path = StatusItemPopup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +199,11 @@
 				C519A729166636100027F3CB /* InfoPlist.strings in Resources */,
 				C519A72F166636100027F3CB /* Credits.rtf in Resources */,
 				C519A735166636100027F3CB /* MainMenu.xib in Resources */,
+				C519A747166636AD0027F3CB /* mf-image-black.png in Resources */,
+				C519A748166636AD0027F3CB /* mf-image-black@2x.png in Resources */,
+				C519A749166636AD0027F3CB /* mf-image-white.png in Resources */,
+				C519A74A166636AD0027F3CB /* mf-image-white@2x.png in Resources */,
+				C519A754166638530027F3CB /* MFPopoverContentViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +216,8 @@
 			files = (
 				C519A72B166636100027F3CB /* main.m in Sources */,
 				C519A732166636100027F3CB /* MFAppDelegate.m in Sources */,
+				C519A7411666369B0027F3CB /* MFStatusView.m in Sources */,
+				C519A753166638530027F3CB /* MFPopoverContentViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

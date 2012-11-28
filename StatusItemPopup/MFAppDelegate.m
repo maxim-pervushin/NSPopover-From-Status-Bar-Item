@@ -7,12 +7,38 @@
 //
 
 #import "MFAppDelegate.h"
+#import "MFStatusView.h"
+#import "MFPopoverContentViewController.h"
+
+@interface MFAppDelegate ()
+{
+    MFStatusView *_statusView;
+}
+
+- (IBAction)showPopover:(id)sender;
+- (IBAction)hidePopover:(id)sender;
+
+@end
 
 @implementation MFAppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    _statusView = [[MFStatusView alloc] init];
+}
+
+- (IBAction)showPopover:(id)sender
+{
+    if (_statusView != nil) {
+        [_statusView showPopoverWithViewController:[[MFPopoverContentViewController alloc] initWithNibName:@"MFPopoverContentViewController" bundle:nil]];
+    }
+}
+
+- (IBAction)hidePopover:(id)sender
+{
+    if (_statusView != nil) {
+        [_statusView hidePopover];
+    }
 }
 
 @end
